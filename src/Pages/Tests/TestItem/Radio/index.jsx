@@ -6,8 +6,8 @@ const Index = ({ name, variant, value, correct_value }) => {
   const labelRef = useRef();
 
   const handleChange = (e) => {
-    const form = document?.forms?.test;
-    form[name].forEach((input) => (input.disabled = true));
+    // const form = document?.forms?.test;
+    // form[name].forEach((input) => (input.disabled = true));
     labelRef.current.classList.add(
       correct_value === value ? style.correct : style.error
     );
